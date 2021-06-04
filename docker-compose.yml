@@ -1,0 +1,15 @@
+version: '3'
+services: 
+    react:
+        build: .
+        environment: 
+            - TZ=Asia/Tokyo
+            - DEBUG=app:*
+        container_name: react    
+        volumes: 
+            - ./app:/app
+        tty: true
+        # working_dir: ./
+        ports: 
+            - 3000:3000
+    
