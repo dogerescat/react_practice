@@ -9,7 +9,8 @@ services:
         volumes: 
             - ./app:/app
         tty: true
-        # working_dir: ./
+        working_dir: /app/react_app
+        command: yarn start
         ports: 
             - 3000:3000
     
