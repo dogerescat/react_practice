@@ -1,14 +1,12 @@
 import './App.css';
-import FormHeader from './components/header.jsx';
-import Form from './components/form.jsx';
-import './styles/form.scss';
-import './styles/header.scss';
+import Main from './components/Main.jsx';
+import './styles/form.css';
+import './styles/header.css';
 
 function App() {
   return (
     <div className="App">
-      <FormHeader/>
-      <Form/>
+      <Main/>
     </div>
   );
 }
